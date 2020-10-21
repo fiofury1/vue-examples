@@ -1,0 +1,8 @@
+In index.js, we write a vue app that binds to the element "#app".
+
+We give the vue app an attribute called 'message' that corresponds to a tag, called {{ message }}, that we've placed within the "#app" element.
+
+Now when we change the value of 'message' in our JS, the "#app" element is re-rendered with the new value of 'message'. 
+
+We call this "declarative rendering" because the HTML is rendered through JS declarations.
+
