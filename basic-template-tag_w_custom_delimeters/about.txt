@@ -1,0 +1,7 @@
+This examples is just like the 'basic-template-tag' example, the only difference is that we've defined the delimeters for our tag, rather than using the vue default of curly brackes.
+
+We define the delimiters in index.js using the 'delimeters' property.
+
+The ability to assign delimiters for tags comes in handy when working with a template language like DTL, that also use curly braces.
+
+
