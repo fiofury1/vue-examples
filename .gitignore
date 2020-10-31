@@ -1,2 +1,3 @@
 # .gitignore
-about.txt
+vue-examples.sublime-project
+vue-examples.sublime-workspace

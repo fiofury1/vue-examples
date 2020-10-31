@@ -1,0 +1,18 @@
+Here, in index.js, we create a Vue app by instantiating a Vue object.
+
+The Vue app will give us the ability to control our HTML through properties and methods of the Vue object.  Later on we'll see more advance cases where we'll use Vue to both fully build and control the HTML.
+
+When we instantiate the Vue object, we pass it a JavaScript object as an argument.  Think of it like passing a dictionary as an argument to a function in python.
+
+In this case, the properties of the object we pass are "el" and "data".
+
+The "el" property is used to specify what element we would like the Vue object to bind to... in this case "#app".
+
+The "data" property is used to pass data to the Vue object.  It is also a JavaScript object.  Within it, we chose to define a property called "message".  "message" corresponds to the {{ message }} tag found within the "#app" element in our HTML.
+
+With our Vue object bound to the "#app" element with data property of "message", within JS code/functions we can now control value displayed in {{ message }} like this:
+
+    app.message = "Something new";
+
+We call this "declarative rendering" because the HTML is rendered through JS declarations.
+
