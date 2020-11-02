@@ -1,6 +1,6 @@
-Here we show how to add functionality that occurs when a user clicks on a button.  In this case, we change the HTML displayed.
+Here we show how to add an event listener.  In this case, the functionality occurs when a user clicks on a button.  More specifially, we change the HTML displayed.
 
-When using Vue, events are tied to HTML elements by using the "v-on" directive.  You can see the "v-on" directive has been added to the <button> tag. 
+When using Vue, event listeners are added using the "v-on" directive.  You can see the "v-on" directive has been added to the <button> tag. 
 
 When the user clicks on the button, the function "reverseMessage" runs. 
 
