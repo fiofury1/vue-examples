@@ -2,10 +2,12 @@ Here we show how to add an event listener.  In this case, the functionality occu
 
 When using Vue, event listeners are added using the "v-on" directive.  You can see the "v-on" directive has been added to the <button> tag. 
 
-When the user clicks on the button, the function "reverseMessage" runs. 
+When the user clicks on the button, the method "reverseMessage" runs. 
 
-The reverseMessage function is defined in our Vue app.  
+The reverseMessage method is defined in our Vue app.  
 
-This example shows something to remember about Vue.  We can define both data and methods associated with our Vue objet.
+This example shows something to remember about Vue.  We can define both data and methods associated with our Vue object.
+
+Like data was defined by passing a data object to Vue constructor, methods are also defined by passing a "method" object to the Vue construtor. 
 
 
