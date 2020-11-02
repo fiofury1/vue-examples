@@ -1,0 +1,11 @@
+Here we show how to add functionality that occurs when a user clicks on a button.  In this case, we change the HTML displayed.
+
+When using Vue, events are tied to HTML elements by using the "v-on" directive.  You can see the "v-on" directive has been added to the <button> tag. 
+
+When the user clicks on the button, the function "reverseMessage" runs. 
+
+The reverseMessage function is defined in our Vue app.  
+
+This example shows something to remember about Vue.  We can define both data and methods associated with our Vue objet.
+
+
