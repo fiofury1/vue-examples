@@ -1,6 +1,8 @@
-Here we show how to add an event listener.  In this case, the functionality occurs when a user clicks on a button.  More specifially, we change the HTML displayed.
+Here we show how to add an event listener.  In this case, the browswer add a listener to a button and a function is called to change the HTML when it is clicked.  (The function reassigns the value of one of our data properties that is linked to a tag in the HTML).
 
-When using Vue, event listeners are added using the "v-on" directive.  You can see the "v-on" directive has been added to the <button> tag. 
+When using Vue, event listeners are added using the "v-on" directive.  
+
+You can see the "v-on" directive has been added to the <button> tag. 
 
 When the user clicks on the button, the method "reverseMessage" runs. 
 
