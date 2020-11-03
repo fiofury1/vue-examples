@@ -1,0 +1,13 @@
+In this example we show how to define a component that can be used like a re-usable HTML tag.  
+
+This is a basic example to allow you to start developing the mental model of components.
+
+We define components by adding them to the Vue class.  This is called "registering" the component.
+
+Then when we instantiate a Vue instance, the instance will have that component available.
+
+Here the component is called "todo-item" and it has a template defined as '<li>This is a todo</li>'.
+
+Once we've created a Vue app we can use this component anywhere within the HTML of our Vue element using the tag syntax <todo-item></todo-item>.
+
+This is a basic example, and we'll show that there are much more powerful things we can do with components.

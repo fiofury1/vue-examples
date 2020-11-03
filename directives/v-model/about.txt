@@ -10,6 +10,8 @@ By adding the "v-model" directive to the input and assigning it a value of "mess
 
 Since the "message" property is also being used in the HTML through the {{ message }} tag, the value will also be automatically updated.
 
+Also, the value of the form input will change whenever Vue.message change in our JavaScript.
+
 
 
 
