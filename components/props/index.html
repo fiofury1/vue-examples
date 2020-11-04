@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+    
+        <div id="app">
+            <ol>
+                <ingredient-item
+                    v-bind:ingredient="singleIngredient"
+                    v-bind:key="singleIngredient.id">
+                </ingredient-item>
+                <ingredient-item
+                    v-for="item in ingredientList"
+                    v-bind:ingredient="item"
+                    v-bind:key="item.id">
+               </ingredient-item>
+            </ol>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
