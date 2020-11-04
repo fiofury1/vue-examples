@@ -6,7 +6,7 @@ Vue.component('ingredient-item', {
 var app = new Vue({
     el: '#app',
     data: {
-      singleIngredient: {id: 0, text: "Butter"},
+      singleIngredient: {text: "Butter"},
       ingredientList: [
         { id: 0, text: 'Salt' },
         { id: 1, text: 'Pepper' },

@@ -8,8 +8,8 @@
         <div id="app">
             <ol>
                 <ingredient-item
-                    v-bind:ingredient="singleIngredient"
-                    v-bind:key="singleIngredient.id">
+                    v-bind:ingredient="singleIngredient">
+                    <!-- v-bind:key="singleIngredient.id"> -->
                 </ingredient-item>
                 <ingredient-item
                     v-for="item in ingredientList"
