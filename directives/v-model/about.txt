@@ -12,6 +12,8 @@ Since the "message" property is also being used in the HTML through the {{ messa
 
 Also, the value of the form input will change whenever Vue.message change in our JavaScript.
 
+Because the value of message can be changed via the form input and within our JavaScript, it's called a two-way binding.
+
 
 
 
