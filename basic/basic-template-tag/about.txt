@@ -16,4 +16,6 @@ With our Vue object bound to the "#app" element with data property of "message",
 
 We call this "declarative rendering" because the HTML is rendered through JS declarations.
 
+Note that we're doing something new here with data.  Up until now, our data has lived in the HTML/DOM.  You might say the source (or source of truth) for our data is our HTML/DOM.  In this case, we have a property, "message" which lives outside of the HTML/DOM and we insert into our HTML/DOM at our choosing.
+
 
