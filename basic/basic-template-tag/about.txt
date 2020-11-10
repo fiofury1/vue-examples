@@ -18,4 +18,6 @@ We call this "declarative rendering" because the HTML is rendered through JS dec
 
 Note that we're doing something new here with data.  Up until now, our data first defined in HTML and stored in the DOM, with the DOM being the "source of truth".  We might have used JavaScript (ex. JQuery) to update the data in the DOM, but ultimately the source of truth, i.e. where the data lived, was still the DOM.  In this case, we have a property, "message" which lives outside of the DOM.  It's lives in JavaScript/Vue land!  We insert into our DOM for rendering at our choosing.
 
+Oh, by the way, you may have heared about something called the "Virtual DOM".  We'll guess what?  The JavaScript/Vue land where the data exits, is the "Virtual DOM".
+
 
