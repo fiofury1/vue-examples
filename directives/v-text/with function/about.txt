@@ -1,0 +1,1 @@
+This example shows how we can define our data by using a function.  This technique is not specific to using the "v-text" directive.

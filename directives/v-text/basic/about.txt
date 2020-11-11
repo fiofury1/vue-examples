@@ -1,0 +1,8 @@
+The "v-text" directive tells the browswer that when building the DOM use value for the property specified from the Vue app "app".
+
+So when rendering the tag <p v-text="message1"></> the browswer renders "Hello friends!".
+
+Remember that when using the "v-text" directive the value is treated as text.  This means you can't add html to your data property and expect the browser to render it as seen in the second example where  <p v-text="message2"></p> gets rendered as "Hello <br> friends!".
+
+
+
