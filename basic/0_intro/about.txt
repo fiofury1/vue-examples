@@ -1,0 +1,42 @@
+Here we show a simple Vue app and explain serveral core principles of Vue.  
+
+A Vue app is created by instantiating a Vue object.  We do this in index.js.
+
+The Vue app will give us the ability to control the rendering and behavior of all elements defined within the scope of the Vue app.  Remember that Vue is JavaScript so it controls page rendering and behavior by interacting with the DOM.  This is done through the properties and methods of the Vue object itself coupled with special html attributes and syntax provided by Vue.  Later on we'll see more advance cases where we'll use Vue to both fully define the HTML and control the page.
+
+When we instantiate the Vue object, we pass it a JavaScript object as an argument.  Think of it like passing a dictionary as an argument to a function in python.
+
+In this case, the properties of the object we pass are "el" and "data", but there are other properties we can pass as well.
+
+"el" is sort for "element".  The "el" property is used to specify what element we would like the Vue object to "bind" to... in this case "#app".  In Vue lingo, Vue developers might say that the Vue object "targets" a particular element.
+
+The "data" property is used to pass data to the Vue object.  We assign it a JavaScript object (called the "data" object).  The properties of the data object are named and defined by the developer.  The properties of the data object become properties of the Vue object.  In this case, we chose to define a property called "message".  
+
+We can now reference "message" within our targeted element of our html.  
+
+We show three different examples of how "message" can be used in our page:
+- Template tag syntax.
+- v-text directive
+- v-html directive
+
+When we use the tag {{ message }} within the bound html element, the browser is instructed to insert the values for message into the DOM. 
+
+When we use "v-text" directive, the value of message is inserted as the content of the element.
+
+Similarly, when we use "v-html" directive, the value of message is inserted as the content of the element.  
+
+Note, the difference between "v-text" and "v-html" is that if there were html tags within "message" their values would be interpeted as text for "v-text" and html for "v-html".
+
+Also note, that "message" is not string, but a like a statement, meaning we can do things like call methods and perform operations, just like you can in a JavaScript statement between the ""'s.
+
+With our Vue object bound to the "#app" element with data property of "message", within JS code/functions we can now control value displayed using our Vue object app:
+
+    app.message = "Something new";
+
+We call this "declarative rendering" because the HTML is rendered through JS declarations.
+
+Note that we're doing something new here with data.  Up until now, the data for our web pages has been defined in HTML (or possibly JavaScript) but always stored in the DOM, with the DOM being the "source of truth".  We might have used JavaScript (ex. JQuery) to update ("query)") the data in the DOM, where we'd do something with it, then return it back to the DOM.  In this example, we have a property, "message" which is stored outside of the DOM.  It's lives in JavaScript/Vue land!  We insert it into our DOM for rendering at our choosing.
+
+Oh, by the way, you may have heared about something called the "Virtual DOM".  Well guess what?  The JavaScript/Vue land where the data exits, is the "Virtual DOM".
+
+
