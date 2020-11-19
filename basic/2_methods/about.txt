@@ -1,0 +1,5 @@
+Just like we can define properties of our Vue object, we can define methods.  
+
+We define our methods by passing a method object to the method property.
+
+You can see that we can call our method from our tags or from our v-html and v-text directives.

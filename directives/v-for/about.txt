@@ -1,15 +1,11 @@
-Here we create a Vue app, that targets element "#app".
+Here we show how to do for loops in Vue.
 
-In the data object, we assign values for 'title' and 'todos'.
+For loops are declared using the "v-for" directive.
 
-'title' is just like values we've assigned in the past.  When the browser creates the DOM, it will enter the value of 'title' into the tag {{ title }}.
+The "v-for" directive requires an array to loop over.  Vue directs the browswer to repeate the element in which the "v-for" directive is defined for every element in the array.  In the examples here, are defining the for loop in <li> elements, so it is <li> elements that are repeated.
 
-'todos' is a little different.  In this case, it's an array (list in Python speak) of objects each with property of 'text' with a value.
+We also show here that the value for each element can be access using tags or "v-html" directive.
 
-Over in the html, we see a new directive, the 'v-for' directive.
-
-In this case, 'v-for' directs the browser that when creating the DOM, repeat the <li> element for every item in 'todos' its values of 'text'. 
-
-We also show how we can add an item to our list, which in turn gets rendered in the HTML.
+We also show that we can use a function to take our data and return the data as an array.  I'm guessing this can be useful when rendering API data in JSON.
 
 

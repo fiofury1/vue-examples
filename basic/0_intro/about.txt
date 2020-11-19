@@ -1,4 +1,4 @@
-Here we show a simple Vue app and explain serveral core principles of Vue.  
+Here we show a simple Vue app and explain several core principles of Vue.  
 
 A Vue app is created by instantiating a Vue object.  We do this in index.js.
 

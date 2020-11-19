@@ -1,1 +1,9 @@
-See "basic\0_intro\about.txt" for example and explanation.
+We saw the 'v-html' directive in the introduction to Vue, but here we show it's versatility.
+
+You can see that within the html, the value of 'v-html' can be a statement.  
+
+In the first example, we show how the value of 'v-html' can be a property of the Vue object.  Vue is directing the browser to insert the value of message into the content of the <p>.
+
+In the second example, we have given a statement that does a simple concatenation for the value of 'v-html'.  
+
+In the third example, we show a statement that calls the 'excited()' method.

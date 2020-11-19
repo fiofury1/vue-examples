@@ -4,16 +4,32 @@
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     </head>
     <body>
-        
         <div id="app">
-            <h4>{{ title }}</h4>
+            <h4>{{ title }} with Tags</h4>
             <ol>
                 <li v-for="todo in todos">
                 {{ todo.text }}
                 </li>
             </ol>
+            <h4>{{ title }} with v-html</h4>
+            <ol>
+                <li v-for="todo in todos" 
+                    v-html="todo.text">
+                </li>
+            </ol>        
+            <h4>{{ title1 }} with Tags</h4>
+            <ol>
+                <li v-for="todo in todos_func()">
+                    {{todo}}
+                </li>
+            </ol>
+            <h4>{{ title1 }} with v-html</h4>
+            <ol>
+                <li v-for="todo in todos_func()"
+                    v-html="todo">
+                </li>
+            </ol>
         </div>
-            
         <script src="index.js"></script>
     </body>
 </html>

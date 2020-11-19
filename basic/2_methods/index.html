@@ -1,23 +1,15 @@
 <html>
     <head>
-        <link rel="stylesheet" href="index.css">
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     </head>
     <body>
         
         <div id="app">
-            <p v-if="seen">{{ message }}</p>
-            <p v-if="seen"
-                v-html="message">        
-            </p>
-
-
-
+            <p>{{ excited(message) }}</p>
+            <p v-text="excited(message)"></p>
+            <p v-html="excited(message)"></p>
         </div>
-
-
-
-            
+        
         <script src="index.js"></script>
     </body>
 </html>
