@@ -1,0 +1,4 @@
+
+"Directives" are special html attributes provided by Vue.  They are added to html elements to "direct" the browswer to do certain things when building the DOM.
+
+Directives start with "v-" for example, "v-if", "v-html".

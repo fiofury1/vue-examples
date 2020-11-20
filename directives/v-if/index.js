@@ -1,9 +1,10 @@
 var app = new Vue({
   el: '#app',
   data: {
-    seen: true,
-    message: "Hello"
+    name: "Joe",
+    enter_message: "Enter",
+    do_not_enter_message: "Do not enter"
   }
 })
 
-//app.seen = false;
+// app.name="Jill"
