@@ -1,4 +1,4 @@
-This examples we show how to specify custom delimeters for our tags, rather than using the vue default of curly brackes.
+In this example we show how to specify custom delimeters for our tags, rather than using the vue default of curly brackes.
 
 We define the delimiters in index.js using the 'delimeters' property.
 
