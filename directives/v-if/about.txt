@@ -3,6 +3,3 @@ In these examples, we show how to conditionally add elements to the DOM.
 The first two examples use the "v-if" directive.  The third examples uses the JavaScript ternary (operator). 
 
 
-
-
-

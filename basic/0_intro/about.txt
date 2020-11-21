@@ -1,14 +1,14 @@
-Here we show a simple Vue app and explain several core principles of Vue.  
+In this introdution to Vue, we show a simple Vue app and explain several core principles of Vue.  
 
-A Vue app is created by instantiating a Vue object.  We do this in index.js.
+First, a Vue app is created by instantiating a Vue object.  We do this in index.js.
 
-The Vue app will give us the ability to control the rendering and behavior of all elements defined within the scope of the Vue app.  Remember that Vue is JavaScript so it controls page rendering and behavior by interacting with the DOM.  This is done through the properties and methods of the Vue object itself coupled with special html attributes and syntax provided by Vue.  Later on we'll see more advance cases where we'll use Vue to both fully define the HTML and control the page.
+The Vue app will give us the ability to control the rendering and behavior of the page within the scope of the Vue app.  Remember that Vue is JavaScript so it controls page rendering and behavior by interacting with the DOM.  In Vue, the control of page rendering and behavior is done through the properties and methods of the Vue object itself coupled with special html attributes, syntax, and user defined tags (called components) provided by and defined in Vue.  Later on we'll see more advance cases where we'll use Vue to both fully define the HTML and control the page.
 
-When we instantiate the Vue object, we pass it a JavaScript object as an argument.  Think of it like passing a dictionary as an argument to a function in python.
+When we instantiate the Vue object, we pass it a JavaScript object as an argument.
 
-In this case, the properties of the object we pass are "el" and "data", but there are other properties we can pass as well.
+In this case, the properties of the object we pass are "el" and "data", but there are other properties we can pass as well.  We will also show that the object can contain methods.
 
-"el" is sort for "element".  The "el" property is used to specify what element we would like the Vue object to "bind" to... in this case "#app".  In Vue lingo, Vue developers might say that the Vue object "targets" a particular element.
+"el" is sort for "element".  The "el" property is used to specify what element we would like the Vue object to "target" to... in this case "#app".  In Vue lingo, Vue developers might say that the Vue object "binds to" a particular element.
 
 The "data" property is used to pass data to the Vue object.  We assign it a JavaScript object (called the "data" object).  The properties of the data object are named and defined by the developer.  The properties of the data object become properties of the Vue object.  In this case, we chose to define a property called "message".  
 
@@ -27,7 +27,7 @@ Similarly, when we use "v-html" directive, the value of message is inserted as t
 
 Note, the difference between "v-text" and "v-html" is that if there were html tags within "message" their values would be interpeted as text for "v-text" and html for "v-html".
 
-Also note, that "message" is not string, but a like a statement, meaning we can do things like call methods and perform operations, just like you can in a JavaScript statement between the ""'s.
+Also note, that "message" is not string, if it was, then the literal "message" would be rendered, and not the value of the property message.  In fact, "message" in v-html="message" and v-text="message" is like a statement.  This means  we can do things like call methods and perform operations, just like you can in a JavaScript statement between the ""'s.
 
 With our Vue object bound to the "#app" element with data property of "message", within JS code/functions we can now control value displayed using our Vue object app:
 
