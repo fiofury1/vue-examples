@@ -7,15 +7,26 @@
     
         <div id="app">
             <ol>
-                <ingredient-item
-                    v-bind:ingredient="singleIngredient">
-                    <!-- v-bind:key="singleIngredient.id"> -->
-                </ingredient-item>
-                <ingredient-item
+                <!-- Here we pass a string to the prop -->
+                <ingredient-item1
+                    ingredient="Cheese">
+                </ingredient-item1>
+                <!-- Here are three examples where we pass a data property as the prop -->
+                <ingredient-item1
+                    :ingredient="singleIngredient1">
+                </ingredient-item1>
+                <ingredient-item2
+                    :ingredient="singleIngredient2">
+                </ingredient-item2>
+                <ingredient-item2
+                    v-bind:ingredient="singleIngredient2">
+                </ingredient-item2>
+                <!-- Here is a more complicated example -->
+                <ingredient-item2
                     v-for="item in ingredientList"
                     v-bind:ingredient="item"
                     v-bind:key="item.id">
-               </ingredient-item>
+               </ingredient-item2>
             </ol>
         </div>
         

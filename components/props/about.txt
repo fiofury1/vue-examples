@@ -1,4 +1,7 @@
-By adding "props" to our component, we are able to add template variables to our components.
+By adding "props" to our component, we are able to do two things:
+    1. Add a template variables to our components and pass a value.
+    2. Treat the property like an parameter in a function and pass it a value when we use the component in the HTML
 
-When we use the component in HTML, we have to define what value will be assigned to the prop.  We do this using the "v-bind" assignments.  Then when the page is rendered, the browser will know what values to insert into the template variables in the component.
+Here we show examples of increasing complexity.
+
 
