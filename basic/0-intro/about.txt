@@ -4,7 +4,7 @@ First, a Vue app is created by instantiating a Vue object.  We do this in index.
 
 The Vue app will give us the ability to control the rendering and behavior of the page within the scope of the Vue app.  Remember that Vue is JavaScript so it controls page rendering and behavior by interacting with the DOM.  In Vue, the control of page rendering and behavior is done through the properties and methods of the Vue object itself coupled with special html attributes, syntax, and user defined tags (called components) provided by and defined in Vue.  Later on we'll see more advance cases where we'll use Vue to both fully define the HTML and control the page.
 
-When we instantiate the Vue object, we pass it a JavaScript object as an argument.
+When we instantiate the Vue object, we pass it a JavaScript object as an argument.  The object is called the "options object".
 
 In this case, the properties of the object we pass are "el" and "data", but there are other properties we can pass as well.  We will also show that the object can contain methods.
 

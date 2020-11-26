@@ -5,9 +5,12 @@
     <body>
         
         <div id="app">
-            <p>{{ excited(message) }}</p>
+            <p>{{ excited(message) + "???"  }}</p>
             <p v-text="excited(message)"></p>
-            <p v-html="excited(message)"></p>
+            <p v-html="excited(message) + '???'"></p>
+            <p> {{ my_num * 10 }}
+            <p v-html="my_num * 20"></p>
+
         </div>
         
         <script src="index.js"></script>

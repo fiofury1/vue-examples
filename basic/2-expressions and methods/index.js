@@ -1,7 +1,8 @@
 var app = new Vue({
     el: '#app',
     data: {
-        message: 'Hello friends!'    
+        message: 'Hello friends!', 
+        my_num: 5 
     },
     methods: {
         excited:  function(arg) {
