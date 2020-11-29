@@ -1,0 +1,6 @@
+Vue offers a way to allow developers to dynamically set the values of html attribues.  Through the control of html attribues pages exhibit dynamic beharior.  The values of attribues are set through through Vue instance property and methods.
+
+To use a Vue property or method to assign a property to a html element, we must target the attribute using the v-bind directive.
+
+The example shows how to use both the full and shorthand forms of 'v-bind'.
+  
