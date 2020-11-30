@@ -10,7 +10,8 @@
             <p v-html="excited(message) + '???'"></p>
             <p> {{ my_num * 10 }}
             <p v-html="my_num * 20"></p>
-
+            <h4>Counter: {{ counter }}</h4>
+            <button v-on:click="incrementCounter">Increment</button>
         </div>
         
         <script src="index.js"></script>
