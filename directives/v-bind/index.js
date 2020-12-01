@@ -1,8 +1,12 @@
 var app = new Vue({
     el: '#app',
     data: {
-        link: 'http://www.google.com'    
+        link: 'http://www.google.com',
+        styleAttribute: "background-color: red;",    
+        styleObject:  {
+            backgroundColor: "red",
+        }
     }
 });
 
-// app.message = "Yo";
+app.styleObject.backgroundColor = "blue";

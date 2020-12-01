@@ -5,10 +5,15 @@
     <body>
         
         <div id="app">
-            <a v-bind:href="link">With v-bind</a>
-            <br>
-            <a :href="link">With Shorthand</a>   
+            <h3>Example 1</h3>
+                <a v-bind:href="link">With v-bind</a>
+                <br>
+                <a :href="link">With Shorthand</a>   
 
+            <h3>Example 2:  Style Binding</h3>
+                <p style="background-color: red;">Using normal style attribute</p>
+                <p :style="styleAttribute">Using v-bind and style attribute</p>
+                <p :style="styleObject">Using v-bind and style object</p>
         <script src="index.js"></script>
     </body>
 </html>

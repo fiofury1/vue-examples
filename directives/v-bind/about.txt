@@ -2,5 +2,9 @@ Vue offers a way to allow developers to dynamically set the values of html attri
 
 To use a Vue property or method to assign a property to a html element, we must target the attribute using the v-bind directive.
 
-The example shows how to use both the full and shorthand forms of 'v-bind'.
+The first example shows how to use both the full and shorthand forms of 'v-bind'.
+
+The second examples shows different ways to add styling.  First we show an inline style that does not use Vue.  Then we show two examples using Vue.  The last example is the most powerful and practical due to the ease in which CSS style can be changed through JavaScript.  As the examples shows, styles can now be accessed and reassigned through the properties of the Vue object!
+
+
   
