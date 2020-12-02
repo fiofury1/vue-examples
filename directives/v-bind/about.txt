@@ -1,10 +1,10 @@
-Vue offers a way to allow developers to dynamically set the values of html attribues.  Through the control of html attribues pages exhibit dynamic beharior.  The values of attribues are set through through Vue instance property and methods.
+Vue offers a way to allow developers to dynamically set the values of html attributes.  As we know, through the control of html attributes pages can exhibit dynamic behavior.  The values of attributes are set using Vue using the Vue instance properties and methods.  When we use Vue to control the value of an html attribute, we imagine that Vue has attached to that attribute or element.  As a result, we call it "binding".
 
 To use a Vue property or method to assign a property to a html element, we must target the attribute using the v-bind directive.
 
-The first example shows how to use both the full and shorthand forms of 'v-bind'.
+The first set of examples shows how to use both the full and shorthand forms of 'v-bind'.  You might ask why did we not need this notation when using Vue properties and methods within v-html and v-text directives.  This is because these 'attributes' are not standard HTML attribues provided by HTML.  They are special attributes (directives) provided by Vue, so we don't need to add additional syntax to bind to them.
 
-The second examples shows different ways to add styling.  First we show an inline style that does not use Vue.  Then we show two examples using Vue.  The last example is the most powerful and practical due to the ease in which CSS style can be changed through JavaScript.  As the examples shows, styles can now be accessed and reassigned through the properties of the Vue object!
+The second set of examples shows different ways to add styling.  First we show an inline style that does not use Vue.  Then we show two examples using Vue.  The last example is the most powerful and practical due to the ease in which CSS style can be changed through JavaScript.  As the examples shows, we define the CSS styles as a JavaScript object with CSS properties defined using camelcase for the corresponding CSS property.  With this setup, styles can now be accessed and reassigned through the properties of the Vue object!
 
 
   
