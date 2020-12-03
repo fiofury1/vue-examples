@@ -5,30 +5,47 @@
     </head>
     <body>
         <div id="app">
-            <h4>{{ title }} with Tags</h4>
+            <h4>Example 1 - Array, Rendered with tags</h4>
             <ol>
-                <li v-for="todo in todos">
+                <li v-for="todo in todos1">
+                {{ todo }}
+                </li>
+            </ol>
+            <h4>Example 2 - Array, Rendered with v-html</h4>
+            <ol>
+                <li v-for="todo in todos1" 
+                    v-html="todo">
+                </li>
+            </ol>        
+            <h4>Example 3 - Array of Objects, Rendered with tags</h4>
+            <ol>
+                <li v-for="todo in todos2">
                 {{ todo.text }}
                 </li>
             </ol>
-            <h4>{{ title }} with v-html</h4>
+            <h4>Example 4 - Array of Objects, Rendered with v-html</h4>
             <ol>
-                <li v-for="todo in todos" 
+                <li v-for="todo in todos2" 
                     v-html="todo.text">
                 </li>
-            </ol>        
-            <h4>{{ title1 }} with Tags</h4>
+            </ol>
+            <h4>Example 5 - Method, Rendered with tags</h4>
             <ol>
                 <li v-for="todo in todos_func()">
-                    {{todo}}
+                    {{ todo }}
                 </li>
-            </ol>
-            <h4>{{ title1 }} with v-html</h4>
+            </ol> 
+            <h4>Example 6 - Method, Rendered with v-html</h4>
             <ol>
-                <li v-for="todo in todos_func()"
+                <li v-for="todo in todos_func()" 
                     v-html="todo">
                 </li>
             </ol>
+            <h4>Example 7 - Numbers from 1 to 10
+            <ul>
+                <li v-for="number in 10">{{ number }}</li>
+            </ul>
+
         </div>
         <script src="index.js"></script>
     </body>
