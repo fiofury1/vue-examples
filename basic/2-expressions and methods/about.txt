@@ -6,4 +6,4 @@ Here we show two different ways to define a method, one with an anonymous functi
 
 You can see that we can call our method from our tags, from directives, or on events.
 
-You will have an 'ah-ha' momenet when you realize that the contents between the ""'s of directives and between the curly braces of tags are expressions.  This means tha you can do things like call functions and use operators (concatentation, arithmetic, etc.) between them.
+You will have an 'ah-ha' momenet when you realize that the contents between the ""'s of directives and between the curly braces of tags are expressions.  This means tha you can do things like call functions and use operators (concatentation, arithmetic, etc.) between them.  Of course, it is not always a best practice to have complicated logic in our html, so we should instead use methods or computed properties.
