@@ -1,5 +1,5 @@
-By adding "props" to our component, we are able to do two things:
-    1. Add a template variables to our components and pass a value.
+By adding "props" to our component, we are able to:
+    1. Add template variables to our components and pass a value.
     2. Treat the property like an parameter in a function and pass it a value when we use the component in the HTML
 
 Here we show examples of increasing complexity.
