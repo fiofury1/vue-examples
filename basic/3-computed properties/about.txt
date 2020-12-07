@@ -1,14 +1,18 @@
-Computed properties are used to "return and show values".
+Computed properties are used to "return and show values".  
 
-They are also called 'computed values'.
+They are often used rather than having complex expressions in our tags and directives.
+
+They are also called "computed values".
 
 The are defined like funcions but are used and behave like properties.
 
-Their values are cached.
+Like properties, their values are cached.
 
 They are used in html like properties (i.e. without the () required to call a function).
 
 They update automatically when any of the values they depend upon are updated.  This makes them different than functions, which need to be called to update the value they return.  The fact that they update automatically makes them like properties.  
 
-They can be used in html rather than having complex expressions in tags and in directives.
+It is best practice not to modify properties in our computed property definitions.
+
+You should think of computed properties as an extension of your data model.
 
