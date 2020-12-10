@@ -10,4 +10,5 @@ var app = new Vue({
     }
 });
 
+app.color = "gray";
 app.styleObject.backgroundColor = "blue";

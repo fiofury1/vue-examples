@@ -1,8 +1,6 @@
-In this case we show how you can work with form inputs prior to submitting the form. 
+In this case we show how you can work with form inputs. 
 
-It is common to work with form inputs when a form is submitted.  We've seen in the "v-on" example that we could bind an event to an element like a button and run a method using the form inputs.
-
-Here we show how one way to work with form inputs prior to submission.
+While going through this example, keep in mind that Vue gives us the ability to write single page applications, where the page loads once and data is sent back to the server by functions/methods in the background.
 
 In this example, we show a two-way binding between a form input and an HTML element.
 
@@ -13,6 +11,8 @@ Since the "message" property is also being used in the HTML through the {{ messa
 Also, the value of the form input will change whenever Vue.message change in our JavaScript.
 
 Because the value of message can be changed via the form input and within our JavaScript, it's called a two-way binding.
+
+We also an example where we use v-model on a checkbox input.
 
 
 

@@ -6,9 +6,14 @@
     <body>
     
         <div id="app">
-            <p>{{ message }}</p>
+            <p>message:  {{ message }}</p>
             <input v-model="message">
+            <br>
+            <p>checked:  {{ checked }}</p>
+            <input type="checkbox" v-model="checked">
+
         </div>
+
         
         <script src="index.js"></script>
     </body>
