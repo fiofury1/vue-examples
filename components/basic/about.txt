@@ -1,6 +1,12 @@
-In this example we show how to define a component that can be used like a re-usable HTML tag.  
+In this example we show how to define a component.  (Note that there are other ways to define components as well).
 
-This is a basic example to allow you to start developing the mental model of components.
+Components allow us to break our web apps into reusable blocks of code. 
+
+We will see that within components we can define both our HTML and JavaScript logic.
+
+In this example, our component looks like re-usable HTML tag.  This is true in this simple example, but you'll see that components can be much more.  In future examples, we'll show how components can act like functions, in that we can pass data to them.  Also, we'll show how you can have nested components.  
+
+But for starters consider this a basic example to start familiarizing you with components so that you can start developing the mental model of components.
 
 We define components by adding them to the Vue class.  This is called "registering" the component.
 
@@ -10,4 +16,4 @@ Here the component is called "todo-item" and it has a template defined as '<li>T
 
 Once we've created a Vue app we can use this component anywhere within the HTML of our Vue element using the tag syntax <todo-item></todo-item>.
 
-This is a basic example, and we'll show that there are much more powerful things we can do with components.
+As mentioned, this is a basic example, and we'll show that there are much more powerful things we can do with components.

@@ -1,6 +1,4 @@
-By adding "props" to our component, we are able to:
-    1. Add template variables to our components and pass a value.
-    2. Treat the property like an parameter in a function and pass it a value when we use the component in the HTML
+"Props" allow us to pass data into our component.   They could be defined as special attribues of a component that allow us to pass data into our component.
 
 Here we show examples of increasing complexity.
 
