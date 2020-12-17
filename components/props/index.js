@@ -1,14 +1,19 @@
+// Here we show a component with a template with a prop
+// that is a variable
 Vue.component('ingredient-item1', {
     props: ['ingredient'],
     template: '<li>{{ ingredient }}</li>'
 })
 
+// Here we show a component with a template with a prop
+// that is a object.
 Vue.component('ingredient-item2', {
     props: ['ingredient'],
     template: '<li>{{ ingredient.text }}</li>'
 })
 
-// Here we show that there are more advanced ways to define properties
+// Here we show that there are more advanced ways to define 
+// props.
 Vue.component('ingredient-item3', {
     props: {
         ingredient: {
