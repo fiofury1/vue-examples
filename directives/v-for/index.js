@@ -11,8 +11,17 @@ var app = new Vue({
     ],
     todo1:  "Do Laundry",
     todo2:  "Wash Dishes",
-    todo3:  "Make Pie",
-  },  
+    todo3:  "Make Pie",  
+    user: {
+      name: "Joe",
+      city: "El Paso",
+      state: "TX",   
+    },
+    todos_with_id: [
+      {id: 1, text: "Shower"},
+      {id: 2, text: "Brush Teeth"},
+    ],
+  },
   methods: {
     todos_func: function(){
         return [

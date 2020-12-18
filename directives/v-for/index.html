@@ -46,6 +46,28 @@
                 <li v-for="number in 10">{{ number }}</li>
             </ul>
 
+            <h4>Example 8 - Looping Over Object</h4>
+            <ul>
+                <li v-for="val in user">
+                    {{ val }}
+                </li>
+            </ul>
+            <ul>
+                <li v-for="(val, name) in user">
+                    {{ name }} - {{ val }}
+                </li>
+            </ul>
+           <ul>
+                <li v-for="(val, name, index) in user">
+                    {{ index }}: {{ name }} - {{ val }}
+                </li>
+            </ul>
+            <h4>Example 9 - Using :key</h4>
+            <ol>
+                <li v-for="todo in todos_with_id" :key="todo.id">
+                    {{ todo.text }}
+                </li>
+            </ol>
         </div>
         <script src="index.js"></script>
     </body>
