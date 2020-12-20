@@ -1,4 +1,4 @@
-Vue offers a way to allow developers to dynamically set the values of html attributes.  As we know, through the control of html attributes pages can exhibit dynamic behavior.  The values of attributes are set using Vue using the Vue instance properties and methods.  When we use Vue to control the value of an html attribute, we imagine that Vue has attached to that attribute or element.  As a result, we call it "binding".
+Vue offers a way to allow developers to dynamically set the values of html attributes.  As we know, through the control of html attributes, pages can exhibit dynamic behavior.  The values of attributes are set using Vue using the Vue instance properties and methods.  When we use Vue to control the value of an html attribute, we imagine that Vue has attached to that attribute or element.  As a result, we call it "binding".  We might say we "bind to the attribute".
 
 To use a Vue property or method to assign a property to a html element, we must target the attribute using the v-bind directive.
 
