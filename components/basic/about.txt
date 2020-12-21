@@ -8,9 +8,9 @@ In this example, our component looks like re-usable HTML tag.  This is true in t
 
 But for starters consider this a basic example to start familiarizing you with components so that you can start developing the mental model of components.
 
-We define components by adding them to the Vue class.  This is called "registering" the component.
+The example shows how we define a Vue component.  Defining a Vue component is also called "registering" the component. 
 
-Then when we instantiate a Vue instance, the instance will have that component available.
+When we define a Vue component it actually becomes a Vue instance that is a child of the root Vue instance.
 
 Here the component is called "todo-item" and it has a template defined as '<li>This is a todo</li>'.
 
