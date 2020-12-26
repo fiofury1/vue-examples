@@ -1,6 +1,6 @@
-Vue offers a way to allow developers to dynamically set the values of html attributes.  As we know, through the control of html attributes, pages can exhibit dynamic behavior.  The values of attributes are set using Vue using the Vue instance properties and methods.  When we use Vue to control the value of an html attribute, we imagine that Vue has attached to that attribute or element.  As a result, we call it "binding".  We might say we "bind to the attribute".
+As we've discussed, the Virtual DOM is the Vue object, stored in memory.  One of Vue's most powerful features is the ability to "bind" the data and methods of the Vue object to values of the html attributes.  With properites tied to html attribues, developers can add dynamic behavior to web pages. 
 
-To use a Vue property or method to assign a property to a html element, we must target the attribute using the v-bind directive.
+To bind a Vue property or method to an HTML attribute, we use the v-bind directive.
 
 The first set of examples shows how to use both the full and shorthand forms of 'v-bind'.  You might ask why did we not need this notation when using Vue properties and methods within v-html and v-text directives.  This is because these 'attributes' are not standard HTML attribues provided by HTML.  They are special attributes (directives) provided by Vue, so we don't need to add additional syntax to bind to them.
 

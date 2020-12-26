@@ -4,7 +4,7 @@ A Vue app is created by "instantiating a Vue object"... we could also say we are
 
 The Vue app will give us the ability to control the rendering and behavior of the page within the scope of the Vue app.  Remember that Vue is JavaScript so it controls page rendering and behavior by interacting with the DOM.  In Vue, the control of page rendering and behavior is done through the properties and methods of the Vue object itself coupled with special html attributes, syntax, and user defined tags (called components) provided by and defined in Vue.
 
-When we instantiate the Vue object, we pass it a JavaScript object as an argument.  The object is called the "options object".
+When we instantiate the Vue object using the Vue function.  We pass it a JavaScript object as an argument.  The object is called the "options object".
 
 In this case, the properties of the object we pass are "el" and "data", but there are other properties we can pass as well.  We will also show that the object can contain methods.
 
@@ -39,6 +39,14 @@ We call this "declarative rendering" because the HTML is rendered through JS dec
 
 Note that we're doing something new here with data.  Up until now, the data for our web pages has been defined in HTML (or possibly JavaScript) but always stored in the DOM, with the DOM being the "source of truth" i.e. where the data lived.  We might have used JavaScript (ex. JQuery) to update ("query)") the data in the DOM, where we'd do something with it, then return it back to the DOM.  In this example, we have a property, "message" which is stored outside of the DOM.  It's lives in JavaScript/Vue land!  We insert it into our DOM for rendering at our choosing.
 
-Oh, by the way, you may have heared about something called the "Virtual DOM".  Well guess what?  The JavaScript/Vue land where the data exits, is the "Virtual DOM".
+Oh, by the way, you may have heared about something called the "Virtual DOM".  Well guess what?  The JavaScript/Vue land where the data exits, is the "Virtual DOM".  
+
+Technically speaking, the "Virtual DOM" is actually the Vue object istelf, including it's properties, stored in memory.
+
+
+
+
+
+
 
 
