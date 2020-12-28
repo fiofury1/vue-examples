@@ -4,3 +4,5 @@
 Directives start with "v-" for example, "v-if", "v-html".
 
 Directives highlight a difference between Vue and vanilla JavaScript or JQuery.  In the latter, the HTML is completely separate from the JavaScript.  To alter the rendering of an element, you have to "getElementbyId" or query the DOM from your JavaScript.  With Vue, we can add code to our HTML that works with our JavaScript to add control the page rendering.
+
+The value assigned to a directives can be an expression.

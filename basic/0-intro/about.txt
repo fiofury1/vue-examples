@@ -19,13 +19,13 @@ We show three different examples of how "message" can be used in our page:
 - v-text directive
 - v-html directive
 
-When we use the tag {{ message }} within the bound html element, the browser is instructed to insert the values for message into the DOM. 
+When we use the tag {{ message }} within the bound html element, the browser knows to insert the value of message into the DOM and update the rendering whenever the value of message property of our Vue instance changes.  In Vue parlance, we say that the value of the message property is "bound" to the tag.  We'll find that Vue is all about "binding", which refers to tying a value or method of the Vue object (OR the entire instance itself) to a place in our html.  Since we are binding a property from our Vue instance here, it is acalled "data binding".  More specifically, use of this "mustache syntax" is called "text interpolation".   
 
-When we use "v-text" directive, the value of message is inserted as the content of the element.
+When we use "v-text" directive, the value of message is inserted as the content of the element.  This is another from of binding.  
 
 Similarly, when we use "v-html" directive, the value of message is inserted as the content of the element.  
 
-Note, the difference between "v-text" and "v-html" is that if there were html tags within "message" their values would be interpeted as text for "v-text" and html for "v-html".
+Note, that teh value in {{}} and "v-text" is interpolated as text, whereas the value of "v-html" is interploated as html, so if there where html tags within "message" their values would be interpeted as text for {{}} and "v-text" and html for "v-html".  
 
 Also note, that "message" is not string, if it was, then the literal "message" would be rendered, and not the value of the property message.  In fact, "message" in v-html="message" and v-text="message" is like a statement or expression.  This means we can do things like call methods and perform operations between the ""'s.
 

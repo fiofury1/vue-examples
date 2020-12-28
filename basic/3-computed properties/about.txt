@@ -10,7 +10,9 @@ Like properties, their values are cached.
 
 They are used in html like properties (i.e. without the () required to call a function).
 
-They update automatically when any of the values they depend upon are updated.  This makes them different than functions, which need to be called to update the value they return.  The fact that they update automatically makes them like properties.  
+They update automatically when any of the values they depend upon change.  This makes them different than functions, which need to be called to update the value they return OR are called when rerendering the section where they are used.  
+
+The fact that computed properties update automatically makes them like properties.  As a result, like properties, computed properties are used for data binding.  
 
 It is best practice not to modify properties in our computed property definitions.
 
