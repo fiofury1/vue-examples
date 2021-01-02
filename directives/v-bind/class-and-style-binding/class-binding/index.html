@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            .warning {
+                font-style: italic;
+            }
+            .boldtext {
+                font-weight: bold;
+            }
+            .error-style {
+                color: red;
+            }
+
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <h4>Example 1</h4>
+                <p v-bind:class="{warning: true}">Warning 1</p>
+                <p v-bind:class="{warning: isWarning}">Warning 2</p>
+            <h4>Example 2</h4>
+                <p :class="errorsObject">Error</p>
+            <h4>Example 3</h4>
+                <p :class="[primaryClass, secondaryClass]">Array Syntax</p>
+                <p :class="[{'error-style': isError}, primaryClass, secondaryClass]">Array and Object Syntax</p>
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -25,11 +25,11 @@ When we use "v-text" directive, the value of message is inserted as the content 
 
 Similarly, when we use "v-html" directive, the value of message is inserted as the content of the element.  
 
-Note, that teh value in {{}} and "v-text" is interpolated as text, whereas the value of "v-html" is interploated as html, so if there where html tags within "message" their values would be interpeted as text for {{}} and "v-text" and html for "v-html".  
+Note, that the value in {{}} and "v-text" is interpolated as text, whereas the value of "v-html" is interploated as html, so if there where html tags within "message" their values would be interpeted as text for {{}} and "v-text" and html for "v-html".  
 
-Also note, that "message" is not string, if it was, then the literal "message" would be rendered, and not the value of the property message.  In fact, "message" in v-html="message" and v-text="message" is like a statement or expression.  This means we can do things like call methods and perform operations between the ""'s.
+Also note, that what is between the mustaches or is assigned to v-text/v-html is not string, if it was, then the literal "message" would be rendered, and not the value of the property message.  In fact, it is an expression.  This means we can do things like call methods and perform operations between the {{}}'s and' ""'s.
 
-With our Vue object bound to the "#app" element and data property of "message" assigned, we can use JS to control value displayed using:
+With our bindings in place, we can use JS to update the value displayed wherever the property message is used.  This is done via:
 
     app.message = "Something new";
 
@@ -42,11 +42,3 @@ Note that we're doing something new here with data.  Up until now, the data for 
 Oh, by the way, you may have heared about something called the "Virtual DOM".  Well guess what?  The JavaScript/Vue land where the data exits, is the "Virtual DOM".  
 
 Technically speaking, the "Virtual DOM" is actually the Vue object istelf, including it's properties, stored in memory.
-
-
-
-
-
-
-
-

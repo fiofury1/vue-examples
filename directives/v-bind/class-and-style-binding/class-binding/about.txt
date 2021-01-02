@@ -1,0 +1,15 @@
+Vue offers powerful syntax to dynamically change the style of an element.
+
+There are two main techniques.
+-  In the first technique, we assign an object to the class attribute of an element.  The object has css class names as property names.  The properties are either assigned true or false directly or they are bound to data properties of the Vue object.  Based upon the truthiness of the assignment/binding, the corresponding css style is applied.
+- In the second technique, we assign an array to the class attribute of an element.  The elements in the array are bound to data properties of the Vue instance and reduce to css style names.  The resulting styles are applied.
+
+With both techniques, in addition to assignment of a Vue instance properties, we can also assign a literal string, method, or computed property.
+
+Here are a few examples.
+
+In the first examples, we show how we can assign an object directly in the html. 
+
+In the second exmaple, we assign a Vue property for our class object, and then assign the object in our html.
+
+Lastly, we show array syntax, which can be used to assign a css style directly to the bound element.   

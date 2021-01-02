@@ -1,1 +1,1 @@
-This repo is a collection of examples using Vue.js
+This repo is a collection of examples using Vue.js V2.x.

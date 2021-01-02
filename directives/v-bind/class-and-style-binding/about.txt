@@ -1,0 +1,3 @@
+Considering that Vue allows us to bind to the values of html attributes, we might set off binding values for class or style attributes by creating expressions that evaluate to strings containing the desired class names or styles. While we could certainly do this, Vue offers an easier way.
+
+Rather than using a string for v-bind with class and style, you can use an object or an array.

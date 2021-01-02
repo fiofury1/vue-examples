@@ -6,7 +6,7 @@ They are also called "computed values".
 
 The are defined like funcions but are used and behave like properties.
 
-Like properties, their values are cached.
+Like properties, their values are cached.  Each use of the computed property references the same cached value.  If you have a computational "expensive" computed property, this results in you not having to recompute it for each use.
 
 They are used in html like properties (i.e. without the () required to call a function).
 

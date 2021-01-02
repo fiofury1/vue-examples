@@ -1,0 +1,11 @@
+
+Here we show different ways to bind to style attributes.
+
+We start by showing an inline style that does not use Vue.
+
+In the second example, we show how we can evalue the value assigned to v-bind:style to a string.  This approach works, but as we'll see there are better methods.
+
+
+
+
+ Then we show three examples using Vue.  The last example is the most powerful and practical due to the ease in which CSS style can be changed through JavaScript.  As the examples shows, we define the CSS styles as a JavaScript object with CSS properties defined using camelcase for the corresponding CSS property.  With this setup, styles can now be accessed and reassigned through the properties of the Vue object!

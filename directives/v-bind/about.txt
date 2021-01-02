@@ -1,10 +1,10 @@
-As we've discussed, the Virtual DOM is the Vue object, stored in memory.  One of Vue's most powerful features is the ability to "bind" the data and methods of the Vue object to values of the html attributes.  With properites tied to html attribues, developers can add dynamic behavior to web pages. 
+One of Vue's most powerful features is the ability to "bind" the data and methods of the Vue object to values of the html attributes.  With properites and methods tied to html attributes, developers can add dynamic behavior to web pages. 
 
 To bind a Vue property or method to an HTML attribute, we use the v-bind directive.
 
-The first set of examples shows how to use both the full and shorthand forms of 'v-bind'.  You might ask why did we not need this notation when using Vue properties and methods within v-html and v-text directives.  This is because these 'attributes' are not standard HTML attribues provided by HTML.  They are special attributes (directives) provided by Vue, so we don't need to add additional syntax to bind to them.
+Here we show how to use both the full and shorthand forms of 'v-bind'.  
 
-The second set of examples shows different ways to add styling.  First we show an inline style that does not use Vue.  Then we show three examples using Vue.  The last example is the most powerful and practical due to the ease in which CSS style can be changed through JavaScript.  As the examples shows, we define the CSS styles as a JavaScript object with CSS properties defined using camelcase for the corresponding CSS property.  With this setup, styles can now be accessed and reassigned through the properties of the Vue object!
+You might ask why did we not need this notation when using Vue properties and methods within v-html and v-text directives.  This is because these 'attributes' are not standard HTML attribues provided by HTML.  They are special attributes (directives) provided by Vue, so we don't need to add additional syntax to bind to them.
 
 
   
