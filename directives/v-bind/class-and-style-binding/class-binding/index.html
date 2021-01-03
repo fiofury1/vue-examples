@@ -23,7 +23,10 @@
                 <p :class="errorsObject">Error</p>
             <h4>Example 3</h4>
                 <p :class="[primaryClass, secondaryClass]">Array Syntax</p>
-                <p :class="[{'error-style': isError}, primaryClass, secondaryClass]">Array and Object Syntax</p>
+
+            <h4>Example 3</h4>
+                <p :class="[isWarning ? primaryClass: '', secondaryClass]">Array with conditional rending using ternary</p>
+                <p :class="[{warning: isWarning}, secondaryClass]">Array with conditional rendering with  Object Syntax</p>
 
         </div>
         <script src="index.js"></script>

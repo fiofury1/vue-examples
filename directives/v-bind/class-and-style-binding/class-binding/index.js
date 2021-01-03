@@ -15,5 +15,5 @@ var app = new Vue({
 });
 
 
-app.isWarning = true,
+app.isWarning = true;
 app.errorsObject.boldtext = true;
