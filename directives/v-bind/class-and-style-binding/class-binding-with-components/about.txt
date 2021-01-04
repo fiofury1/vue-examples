@@ -1,4 +1,4 @@
 You can add class bindings to a component.  When you do: 
 
-- the  result is applied to the root element of the component, and 
+- the resulting class is applied to the root element of the component, and 
 - any classes already applied to the root element remain.

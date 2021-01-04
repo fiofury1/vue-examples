@@ -3,10 +3,13 @@ var app = new Vue({
     data: {
         color: 'red',
         styleAttribute: "background-color: navy;",    
-        styleObject:  {
+        styleObject1:  {
             backgroundColor: "red",
+            fontWeight: "bold",
         },
-    
+        styleObject2:  {
+            "font-style": "italic",
+        }
     }
 });
 
