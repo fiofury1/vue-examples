@@ -1,9 +1,9 @@
 There are a few different ways to bind to style attributes using Vue.
 
-Below we show different examples, the most powerful and practical is using a JavaScript object with css styles defined as properties using camel case (or kabab case).  The properties can then be changed using JavaScript.
+Below we show different examples, the most powerful and practical is using a JavaScript object with css styles defined as properties using camel case (or kabab case in quotes).  The properties can then be changed using JavaScript.
 
 In the first example, we show an inline style, not using JavaScript.
 
-In the second set of example, we show how we can evalue the binding to a string.  This approach works, but as discussed there is a better way.
+In the second set of example, we show how we can evalute the binding to a string.  This approach works, but as discussed there is a better way.
 
-In the third set of examlpes, we style bind using objects.  The last example is the most powerful and practical.  As the examples shows, we define the CSS styles as a JavaScript object with CSS properties defined using camelcase for the corresponding CSS property.  With this setup, styles can now be accessed and reassigned through the properties of the Vue object!
+In the third set of examlpes, we style bind using objects.  The second and third examples are the most powerful and practical.  As the examples shows, we define the CSS styles as a JavaScript object with CSS properties defined using camelcase for the corresponding CSS property.  With this setup, styles can now be accessed and reassigned through the properties of the Vue object!

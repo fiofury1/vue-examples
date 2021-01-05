@@ -1,0 +1,16 @@
+In these examples, we show how to conditionally add elements to the DOM.  This is also called "conditional rendering".
+
+The first three examples use the "v-if" directives.  
+
+The fourth example uses the "v-show" directive.
+
+"v-if" and "v-show" work slightly differently, for "v-if" when the condition is false, its element and any child elements will not be rendered to the the DOM.   For "v-show", when it's condition is false, its element and child element are rendered to the DOM with style="display: none;".
+
+What the above behavior means is that:
+- Pages with v-if-else will load faster than same page built with v-show.
+- Pages with v-if-else will reload more slowly when toggling between conditions compared to the same page built with v-show.
+
+The fifth example adds the conditional logic in the v-html expression using the JavaScript ternary (operator). 
+
+
+Remember that using v-if and v-for is not recommended.  See Vue official documentation style guide for more info.

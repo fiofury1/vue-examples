@@ -6,18 +6,25 @@
     <body>
         
         <div id="app">
-            <h4>Example 1</h4>
+            <h4>Example 1 </h4>
+                <p v-if="isError">{{errorMessage}}</p>
+                <ul v-if="isError">
+                    <li>One</li>
+                    <li>Two</li>
+                </ul>
+            <h4>Example 2</h4>
                 <p v-if="name == 'Joe'">{{enter_message}}</p>
                 <p v-else-if="name == 'Jill'">{{do_not_enter_message}}</p>
                 <p v-else>No Message</p>
-            <h4>Example 2</h4>
+            <h4>Example 3</h4>
                 <p v-if="name == 'Joe'" v-html="enter_message"></p>
                 <p v-else-if="name == 'Jill'" v-html="do_not_enter_message"></p>
                 <p v-else>No Message</p>
-            <h4>Example 3</h4>
+            <h4>Example 4</h4>
+                <p v-show="isError">{{errorMessage}}</p>
                 <p v-show="name == 'Joe'">{{enter_message}}</p>
                 <p v-show="name == 'Jill'">{{do_not_enter_message}}</p>
-            <h4>Example 4</h4>
+            <h4>Example 5</h4>
                 <p v-html="  
                     name == 'Joe' ? enter_message :
                     name == 'Jill' ? do_not_enter_message : 'No Message'
