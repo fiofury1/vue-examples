@@ -5,28 +5,50 @@
     </head>
     <body>
         <div id="app">
-            <h4>Example 1 - Array, Rendered with tags</h4>
+            <h4>Example 1 - Simple Array</h4>
             <ol>
-                <li v-for="todo in todos1">
+                <li v-for="todo in todos">
                 {{ todo }}
                 </li>
             </ol>
-            <h4>Example 2 - Array, Rendered with v-html</h4>
-            <ol>
-                <li v-for="todo in todos1" 
-                    v-html="todo">
+            <h4>Example 2 - Simple Array - You can also access the index</h4>
+            <ul>
+                <li v-for="(todo, index) in todos">
+                {{ index }} - {{ todo }}
                 </li>
-            </ol>        
+            </ul> 
+            <h4>Example 3 - Array of Objects</h4>  
+            <ul>
+                <li v-for="book in books">
+                {{ book.title }} by {{ book.author }}
+                </li>
+            </ul> 
+            <h4>Example 4 - Iterating over an object 1</h4>
+            <ul>
+                <li v-for="value in personObject">{{ value }}</li>
+            </ul> 
+            <h4>Example 5 - Iterating over an object 2</h4>
+            <ul>
+                <li v-for="(value, name) in personObject">{{ name }}:  {{ value }}</li>
+            </ul> 
+            <h4>Example 6 - Iterating over an object 3</h4>
+            <ul>
+                <li v-for="(value, name, index) in personObject">({{ index}}) {{ name }}:  {{ value }}</li>
+            </ul> 
+            <h4> Example 7 - v-for with an integer</h4>
+            <ul>
+                <li v-for="number in 10">{{ number }}</li>
+            </ul>
+
+
+
+
+
+<!-- 
             <h4>Example 3 - Array of Objects, Rendered with tags</h4>
             <ol>
                 <li v-for="todo in todos2">
                 {{ todo.text }}
-                </li>
-            </ol>
-            <h4>Example 4 - Array of Objects, Rendered with v-html</h4>
-            <ol>
-                <li v-for="todo in todos2" 
-                    v-html="todo.text">
                 </li>
             </ol>
             <h4>Example 5 - Method, Rendered with tags</h4>
@@ -67,7 +89,7 @@
                 <li v-for="todo in todos_with_id" :key="todo.id">
                     {{ todo.text }}
                 </li>
-            </ol>
+            </ol> -->
         </div>
         <script src="index.js"></script>
     </body>

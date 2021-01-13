@@ -1,4 +1,4 @@
-One of Vue's most powerful features is the ability to "bind" the data and methods of the Vue object to values of the html attributes.  With properites and methods tied to html attributes, developers can add dynamic behavior to web pages. 
+One of Vue's most powerful features is the ability to "bind" the data and methods of the Vue object to values of the html attributes.  With properites and methods tied to values of html attributes, developers can add dynamic behavior to web pages. 
 
 To bind a Vue property or method to an HTML attribute, we use the v-bind directive.
 

@@ -41,4 +41,4 @@ Note that we're doing something new here with data.  Up until now, the data for 
 
 Oh, by the way, you may have heared about something called the "Virtual DOM".  Well guess what?  The JavaScript/Vue land where the data exits, is the "Virtual DOM".  
 
-Technically speaking, the "Virtual DOM" is actually the Vue object istelf, including it's properties, stored in memory.
+Technically speaking, the "Virtual DOM" is actually the Vue object itself, including it's properties, stored in memory.

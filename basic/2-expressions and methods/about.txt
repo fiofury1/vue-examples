@@ -2,7 +2,7 @@ Just like we can define properties of our Vue object, we can define methods.
 
 We define our methods by passing a method object to the method property.
 
-Here we show two different ways to define a method, one with an anonymous function and the other with named function.
+Here we show two different ways to define a method, one with an anonymous function and the other with named function.  Note that not all browsers support use of named functions.  
 
 You can see that we can call our method from our tags, from directives, or on events.
 

@@ -1,13 +1,13 @@
-Here we show how to do for loops in Vue.  For loops instruct the browser to repeate elements when building the DOM.
+Here we show how to build out repeated elements in the DOM using for loops.  
 
 For loops are declared using the "v-for" directive.
 
-The "v-for" directive requires an array or object to loop over.  As the examples show, an array can be a simple array or an array of objects.  The array can even be returned by a method. 
+The "v-for" directive requires either an an array or object to loop over.  If an array, the an array can be a simple array or an array of objects.  The array or object can even be returned by a method. 
 
 Vue directs the browswer to repeate the element in which the "v-for" directive is defined for every element in the array.  In the examples here, we are defining the for loop in <li> elements, so it is <li> elements that are repeated.
 
-We also show here that the value for each element can be access using tags or "v-html" directive.
-
 Whenever possible, Vue recommends that when using the v-for directive, you also use :key attribute.  You should assign a unique value from your array to :key.  This will help Vue keep track of updates to the values of your list, and re-render appropriately.
+
+CONTINUE BY EXPLAINING EACH EXAMPLE
 
 

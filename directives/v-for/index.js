@@ -1,36 +1,45 @@
 var app = new Vue({
   el: '#app',
   data: {
-    todos1: [
+    todos: [
       'Exercise',
       'Sleep'
     ],
-    todos2: [
-      { text: 'Walk Dog' },
-      { text: 'Wash Car' },
+    books: [
+      { title: 'White Fang', 
+        author: 'Jack London' },
+      { title: 'To Kill a Mockingbird', 
+        author: 'Harper Lee' },
     ],
-    todo1:  "Do Laundry",
-    todo2:  "Wash Dishes",
-    todo3:  "Make Pie",  
-    user: {
-      name: "Joe",
-      city: "El Paso",
-      state: "TX",   
+    personObject: {
+      name:  "Joe",
+      hairColor: "black",
+      eyeColor:  "brown",
     },
-    todos_with_id: [
-      {id: 1, text: "Shower"},
-      {id: 2, text: "Brush Teeth"},
-    ],
+
+
+  //   todo1:  "Do Laundry",
+  //   todo2:  "Wash Dishes",
+  //   todo3:  "Make Pie",  
+  //   user: {
+  //     name: "Joe",
+  //     city: "El Paso",
+  //     state: "TX",   
+  //   },
+  //   todos_with_id: [
+  //     {id: 1, text: "Shower"},
+  //     {id: 2, text: "Brush Teeth"},
+  //   ],
   },
-  methods: {
-    todos_func: function(){
-        return [
-            this.todo1,
-            this.todo2,
-            this.todo3
-        ]
-    }
-  }
+  // methods: {
+  //   todos_func: function(){
+  //       return [
+  //           this.todo1,
+  //           this.todo2,
+  //           this.todo3
+  //       ]
+  //   }
+  // }
 });
 
-app.todos.push({ text: 'New item' })
+// app.todo.push({ text: 'New item' })
