@@ -1,6 +1,6 @@
 In this example we show how to define a component.  (Note that there are other ways to define components as well).
 
-Components allow us to break our web apps into reusable blocks of code. 
+Components allow us to break our web apps into reusable blocks of code.  This makes our code more modular and maintainable. 
 
 We will see that within components we can define both our HTML and JavaScript logic.
 
@@ -13,6 +13,15 @@ The example shows how we define a Vue component.  Defining a Vue component is al
 When we define a Vue component it actually becomes a Vue instance that is a child of the root Vue instance.
 
 Here the component is called "todo-item" and it has a template defined as '<li>This is a todo</li>'.
+
+Components can include more than one element, but it can only have one root element, so if you wanted to included two elements, you must wrap them in a div.  Ex.
+    `<div>
+        <p>Hello</p>
+        <p>What is your name?</p>
+    </div>`
+
+    Note we're wrapping our component in backticks.   This make it a template literal in JavaScipt, thereby allowing multi-line strings and nested expressions.
+
 
 Once we've created a Vue app we can use this component anywhere within the HTML of our Vue element using the tag syntax <todo-item></todo-item>.
 
