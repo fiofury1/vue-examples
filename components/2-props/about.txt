@@ -2,4 +2,6 @@
 
 Here we show examples of increasing complexity.
 
+Note that one of the reasons we need props is because a child component can't access the data of its parent component.
+
 

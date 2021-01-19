@@ -1,0 +1,16 @@
+SUMMARY:
+- A child component can trigger events using $emit.
+- If a parent is listening for the event, methods can be triggered for the parent to take action.
+
+
+COMMENTARY:
+- We saw in the props example that the child component can't access the data of it's parent directly.  That said, we can use a prop to pass desired data to the child for display and computation.  Of course,  what if the child needs to change the parent data?  Or what if the child wants to initiate some other action by the parent?
+
+- Since a child component can't change it's parents data directly, a parent has to change it's data itself.  What we can do is have the child tell the parent to take some action.  This is done by having the child trigger an event that the parent is listening to.    
+
+- The parent can listen by adding an event listener to the child component.  When the event is fired off in the child, the parent will then take the desired action tied to the event.  This could be changing the parent data or any action defined by a method.
+
+- This example shows how to put this all together.
+
+
+
