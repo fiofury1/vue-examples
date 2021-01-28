@@ -4,9 +4,18 @@
     </head>
     <body>
         <div id="app">
-            <p>{{counter}}</p>
-            <incrementer v-on:increment="incrementCounter"></incrementer>
-            <incrementer @increment="incrementCounter"></incrementer>
+
+            <h4>Example 1</h4>
+                <p>{{counter}}</p>
+                <incrementer v-on:increment="incrementCounter"></incrementer>
+                <incrementer @increment="incrementCounter"></incrementer>
+            <br>
+            <h4>Example 2</h4>
+                <random-thought-box
+                    v-on:add-thought="addThought"> 
+                </random-thought-box>    
+                <h5>Here are my random thoughts:</h5>    
+                <p v-for="thought in thoughts">{{ thought }}</p>
         </div>
         
         <script src="index.js"></script>
