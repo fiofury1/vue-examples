@@ -1,9 +1,19 @@
 Just like we can define properties of our Vue object, we can define methods.  
 
+Methods will run in the browser and do things like update data, make calculations, trigger events, and call apis.  Because Vue is reactive, updates to data will trigger re-rendering wherever the data is bound.
+
 We define our methods by passing a method object to the method property.
 
-Here we show two different ways to define a method, one with an anonymous function and the other with named function.  Note that not all browsers support use of named functions.  
+Here we show two different ways to define a method:
+- Long form - As anonymous function 
+- Short Form - As named function.  
+
+Note that not all browsers support use of named functions.  
 
 You can see that we can call our method from our tags, from directives, or on events.
+
+When calling methods from some directives like v-on directive you don't use the ().  
+When calling methods from other Vue expressions i.e. in tags, other directives, etc. you do need to use the () syntax.
+
 
 You will have an 'ah-ha' moment when you realize that the contents between the ""'s of directives and between the curly braces of tags are actually expressions rather than a simple assignment.  This means tha you can do things like call functions and use operators (concatentation, arithmetic, etc.) between them.  Of course, it is not always a best practice to have complicated logic in our html, so we should instead use methods, properties, or computed properties.

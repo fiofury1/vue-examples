@@ -1,0 +1,12 @@
+Event modifiers are used to override the default behavior of the browser.  Here are examples of event modifiers.
+
+
+
+Once - Limits the event to happen only once.
+
+    <button v-on:click.once="displayUsers = !displayUsers">Display Users!</button>
+
+
+Prevent - Prevent the default behavior
+    
+    <form v-on:submit.prevent="submitForm"></form>

@@ -1,0 +1,3 @@
+Event listeners are added in Vue using the "v-on" directive.  
+
+"@" can be used as a shorthand for "v-on".  

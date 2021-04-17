@@ -1,4 +1,8 @@
-"Props" allow us to pass data into our component.   They could be defined as special attribues of a component that allow us to pass data into our component.
+"Props" allow us to pass data into a component.   
+
+If we want to define a prop, we list it in our component definition.
+
+Then, in our HTML, props are used like custom attribues of a component.  By assigning or binding a value to the attribute, the value is passed into the component, becoming a property of that component (just like our data properties)
 
 Here we show examples of increasing complexity.
 
